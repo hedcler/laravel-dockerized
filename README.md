@@ -1,8 +1,8 @@
 # Laravel Dockerized
 
-Laravel Dockerized is an all-in-one repository with everything you need to start developing Laravel application locally, using **docker-compose**. It's a fork of the awesome [php-dockerized by kasperisager](https://github.com/kasperisager/php-dockerized). I modified some settings and made some tweaks to let you work with a fully functional Laravel 5.1 install.
+Laravel Dockerized is an all-in-one repository with everything you need to start developing Laravel application locally, using **docker-compose**. It's a fork of the awesome [php-dockerized by kasperisager](https://github.com/kasperisager/php-dockerized). I modified some settings and made some tweaks to let you work with a fully functional Laravel 5 install.
 
-PHP Dockerized gives you everything you need for developing PHP applications locally. The idea came from the need of having an OS-agnostic and virtualized alternative to the great [MNPP](https://github.com/jyr/MNPP) stack as regular LAMP stacks quite simply can't keep up with the Nginx + PHP-FPM/HHVM combo in terms of performance. I hope you'll find it as useful an addition to your dev-arsenal as I've found it!
+PHP Dockerized gives you everything you need for developing PHP applications locally. The idea came from the need of having an OS-agnostic and virtualized alternative to the great [MNPP](https://github.com/jyr/MNPP) stack as regular LAMP stacks quite simply can't keep up with the Nginx in terms of performance. I hope you'll find it as useful an addition to your dev-arsenal as I've found it!
 
 ## What's Inside?
 
@@ -13,7 +13,6 @@ In the `docker-compose.yml` you will find the complete setup for the following s
 * [MariaDB](https://mariadb.org/)
 * [MongoDB](http://www.mongodb.org/)
 * [PHP-FPM](http://php-fpm.org/)
-* [HHVM](http://www.hhvm.com/)
 * [Memcached](http://memcached.org/)
 * [Redis](http://redis.io/)
 * [Elasticsearch](http://www.elasticsearch.org/)

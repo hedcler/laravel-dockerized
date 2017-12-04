@@ -4,26 +4,26 @@ front:
     - "80:80"
     - "443:443"
     - "9000:9000"
+    - "9002:9002"
   links:
-    - mysql:mysql
+    # - mysql:mysql
     - mariadb:mariadb
     - mongo:mongo
-    - memcached:memcached
     - redis:redis
     - elasticsearch:elasticsearch
   volumes:
     - ./www:/var/www
     - ./sites:/etc/nginx/conf.d
 
-mysql:
-  image: mysql
-  ports:
-    - "3306:3306"
-  environment:
-    MYSQL_ROOT_PASSWORD: password
-    MYSQL_DATABASE: homestead
-    MYSQL_USER: homestead
-    MYSQL_PASSWORD: secret
+# mysql:
+#   image: mysql
+#   ports:
+#     - "3306:3306"
+#   environment:
+#     MYSQL_ROOT_PASSWORD: password
+#     MYSQL_DATABASE: homestead
+#     MYSQL_USER: homestead
+#     MYSQL_PASSWORD: secret
 
 mariadb:
   image: mariadb
@@ -40,11 +40,6 @@ mongo:
   image: mongo
   ports:
     - "27017:27017"
-
-memcached:
-  image: memcached
-  ports:
-    - "11211:11211"
 
 redis:
   image: redis
